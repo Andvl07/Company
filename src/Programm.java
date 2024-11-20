@@ -13,5 +13,5 @@ class Program {
         System.out.println("Количество сотрудников: " + factory.maxPersons(average));
     }
 
-    close scanner();
+    scanner.close();
 }
