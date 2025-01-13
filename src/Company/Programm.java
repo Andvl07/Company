@@ -19,7 +19,7 @@ class Program {
             int choice = in.nextInt();
             in.nextLine(); // Очистка буфера
 
-            switch (choice) {
+            switch (choice) { //реализация выбора действия (добавление, удаление, просмотр списка компаний; завершение программы) через консоль
                 case 1:
                     addCompany(in);
                     break;
