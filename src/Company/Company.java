@@ -3,11 +3,10 @@ package Company;
 
 
 class Company {
-    public String name; // название
-    public int persons; // количество сотрудников
-    public int money; // месячный фонд зарплаты
+    public String name;
+    public int persons;
+    public int money;
 
-    // конструктор
     public Company(String name, int persons, int money) {
         this.name = name;
         this.persons = persons;
@@ -27,10 +26,7 @@ class Company {
         return money / salary;
     }
 
-    public int minus(int minus1 /* налог в % */, int minus2 /* отчисление в ПФ в % */) {
-        return money * (minus1 + minus2) / 100;
+    public int minus(int taxPercent, int pensionFundPercent) {
+        return money * (taxPercent + pensionFundPercent) / 100;
     }
 }
-
-
-
