@@ -1,4 +1,5 @@
 package Company;
+
 import java.util.Scanner;
 import java.util.ArrayList;
 
@@ -19,7 +20,7 @@ class Program {
             int choice = in.nextInt();
             in.nextLine(); // Очистка буфера
 
-            switch (choice) { //реализация выбора действия (добавление, удаление, просмотр списка компаний; завершение программы) через консоль
+            switch (choice) { //реализация выбора действия (добавление, удаление, просмотр списка компаний; завершение программы|обработка выбора неверной цифры) через консоль
                 case 1:
                     addCompany(in);
                     break;
